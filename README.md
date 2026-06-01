@@ -1,20 +1,37 @@
-# RLWM task code - online version
+# RLWM Task Code — Online Version
 
-This repository contains the RLWM code. Please search for `REPLACE_ME` and modify them for your own purpose.
+This repository contains the RLWM task code. Search for `REPLACE_ME` and modify those values for your own use.
 
-The experiment code is based on jspsych(https://www.jspsych.org/7.3/)
+The experiment is built on [jsPsych](https://www.jspsych.org/7.3/).
 
-# Coding assignment
+---
 
-Exercise 0: host on your own computer
-run python3 -m http.server in terminal
-go to http://localhost:8000/exp.html
-explore developer console (cmd+option+j in macOS) set breakpoints and step through code to understand how it's built.
+## Coding Assignment
 
-Exercise 1: host the experiment on github
-https://github.com/ccs-ucb/290Q/blob/main/assets/labs/L16-hosting-ghp/hosting-ghp.md
+### Exercise 0: Host on Your Own Computer
 
-Exercise 2: pull a URL variable to define the sequence CSV presented manually, instead of randomly picking.
+1. In your terminal, run:
+   ```bash
+   python3 -m http.server
+   ```
+2. Open your browser and go to: `http://localhost:8000/exp.html`
+3. Open the developer console (`Cmd+Option+J` on macOS), set breakpoints, and step through the code to understand how it's built.
 
-Exercise 3: add a free text survey at the end asking participants for any comments or feedback about the experiment
+---
 
+### Exercise 1: Host the Experiment on GitHub Pages
+
+Follow the instructions here:
+[L16 — Hosting on GitHub Pages](https://github.com/ccs-ucb/290Q/blob/main/assets/labs/L16-hosting-ghp/hosting-ghp.md)
+
+---
+
+### Exercise 2: Pull a URL Variable for the Sequence CSV
+
+Instead of randomly picking a sequence CSV, modify the code to read the sequence number from a URL parameter so the stimulus sequence can be selected manually.
+
+---
+
+### Exercise 3: Add a Free-Text Survey
+
+Add a free-text survey at the end of the experiment asking participants for any comments or feedback (use jspsych plugin `static/jspsych/jspsych-survey-text.js`).
