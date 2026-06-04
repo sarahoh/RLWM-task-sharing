@@ -11,11 +11,11 @@ The experiment is built on [jsPsych](https://www.jspsych.org/7.3/).
 ### Exercise 0: Host on Your Own Computer
 
 1. In your terminal, run:
-   ```bash
-   python3 -m http.server
+   ```
+   python -m http.server
    ```
 2. Open your browser and go to: `http://localhost:8000/exp.html`
-3. Open the developer console (`Cmd+Option+J` on macOS), set breakpoints, and step through the code to understand how it's built.
+3. Open the developer console (`Cmd+Option+J` on macOS), set breakpoints, and step through the code to understand how the task is built.
 
 ---
 
