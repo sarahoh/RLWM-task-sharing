@@ -15,7 +15,7 @@ The experiment is built on [jsPsych](https://www.jspsych.org/7.3/).
    python -m http.server
    ```
 2. Open your browser and go to: `http://localhost:8000/exp.html`
-3. Open the developer console (`Cmd+Option+J` on macOS), set breakpoints, and step through the code to understand how the task is built.
+3. Open the developer console (`Cmd+Option+J` on macOS), set breakpoints, and step through the code to understand how the task is built. **Tip: set a breakpoint at `jsPsych.init()` in `exp.html`** in order to modify the experiment timeline before running the timeline; you can use this trick to skip over certain parts of the experiment so you don't have to do the whole experiment every time you want to test a new feature.
 
 ---
 
@@ -28,10 +28,13 @@ Follow the instructions here:
 
 ### Exercise 2: Pull a URL Variable for the Sequence CSV
 
-Instead of randomly picking a sequence CSV, modify the code to read the sequence number from a URL parameter so the stimulus sequence can be selected manually.
+Instead of randomly picking a sequence CSV, modify the code to read the sequence number from a URL parameter so the stimulus sequence can be selected manually (see line 34 of `exp.html`).
 
 ---
 
 ### Exercise 3: Add a Free-Text Survey
 
 Add a free-text survey at the end of the experiment asking participants for any comments or feedback (use jspsych plugin `static/jspsych/jspsych-survey-text.js`).
+
+### Exercise 4: Save Data Locally
+Modify the task code (e.g. function `save_data_csv` in `/static/js/saveMailUpload.js`) to download task data to your computer using `jsPsych` function `localSave`.
